@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+  --dark: #212325;
+  --light: #5077c6;
+  --black: black;
+  --borderRadius: 5px;
+  }
+  
+  body {
+    margin: auto;
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    line-height: 1.5;
+    color: var(--light);
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  

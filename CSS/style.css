@@ -20,19 +20,12 @@
   }
   
   h2 {
-    font-size: 25px;
-  }
-  
-  h3 {
     font-size: 20px;
   }
-  
-  h4 {
-    font-size: 18px;
-  }
-  
+
   p {
-    font-size: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   /* about me  */
@@ -49,7 +42,7 @@
   .lead {
     font-size: 1rem;
     font-weight: 300;
-}
+  }
   
   .aboutFlex {
     display: flex;
@@ -72,6 +65,8 @@
     display: grid;
     gap: 1em;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
     grid-template-columns: col-4;
     grid-template-rows: 10%;
     grid-template-areas: 
@@ -79,7 +74,7 @@
     "fA sA tA";
   }
 
-  .titleWorkGrid {
+  .titleGrid {
     grid-area: Ti;
     text-align: center;
   }
@@ -98,3 +93,31 @@
     grid-area: tI;
     cursor: pointer;
   }
+
+  /*  portfolio  */
+  .skills {
+    background-color: var(--dark);
+    padding: 40px;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 50px;
+  }
+
+  /*  contact  */
+  .contactme {
+    margin-bottom: 50px;
+  }
+  
+  /*  footer  */
+  .footer {
+    background-color: var(--dark);
+    padding: 40px;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+ 

@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
   }
-  
+
   :root {
-  --dark: #212325;
-  --light: #5077c6;
-  --black: black;
+  --dark: #343a40;
+  --light: #f8f9fa;
+  --midlight: #e9e6e9;
   --borderRadius: 5px;
   }
   
@@ -13,10 +13,88 @@
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
     line-height: 1.5;
-    color: var(--light);
   }
   
   h1 {
     font-size: 30px;
   }
   
+  h2 {
+    font-size: 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 10px;
+  }
+
+  /* about me  */
+  .jumbotron {
+    background-color: var(--midlight);
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  } 
+
+  .lead {
+    font-size: 1rem;
+    font-weight: 300;
+}
+  
+  .aboutFlex {
+    display: flex;
+    gap: 2em;
+  }
+
+  .aboutFlexText {
+    align-self: center;
+  }
+  
+  #profileImage {
+    border: 3px solid var(--dark);
+    border-radius:var(--borderRadius);
+    width: 200px;
+    height: 200px;
+  }
+
+  /* work portfolio  */
+  .workGrid {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: col-4;
+    grid-template-rows: 10%;
+    grid-template-areas: 
+    "Ti Ti Ti"
+    "fA sA tA";
+  }
+
+  .titleWorkGrid {
+    grid-area: Ti;
+    text-align: center;
+  }
+
+  .firstApp {
+    grid-area: fA;
+    cursor: pointer;
+  }
+
+  .secondApp {
+    grid-area: sA;
+    cursor: pointer;
+  }
+
+  .thirdApp {
+    grid-area: tI;
+    cursor: pointer;
+  }

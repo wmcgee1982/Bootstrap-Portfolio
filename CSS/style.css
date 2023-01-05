@@ -6,7 +6,6 @@
   --dark: #343a40;
   --light: #f8f9fa;
   --midlight: #e9e6e9;
-  --borderRadius: 5px;
   }
   
   body {
@@ -28,7 +27,9 @@
     margin-bottom: 5px;
   }
 
+
   /* about me  */
+
   .jumbotron {
     background-color: var(--midlight);
   }
@@ -60,7 +61,9 @@
     height: 200px;
   }
 
+
   /* work portfolio  */
+
   .workGrid {
     display: grid;
     gap: 1em;
@@ -94,7 +97,9 @@
     cursor: pointer;
   }
 
-  /*  portfolio  */
+
+  /*  skills section  */
+
   .skills {
     background-color: var(--dark);
     padding: 40px;
@@ -105,7 +110,7 @@
     margin-bottom: 50px;
   }
 
-  /*  contact  */
+  /*  contact section  */
   .contactme {
     margin-bottom: 50px;
   }

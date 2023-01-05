@@ -14,53 +14,66 @@
     line-height: 1.5;
   }
   
-  h1 {
-    font-size: 30px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-
   p {
-    font-size: 15px;
     margin-bottom: 5px;
+    font-weight: 300;
   }
 
 
-  /* about me  */
+  /* navbar  */
+
+  #navbarNav {
+    justify-content: flex-end;
+  }
+
+
+  /* jumbotron  */
 
   .jumbotron {
-    background-color: var(--midlight);
-  }
-
-  .display-4 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-  } 
-
-  .lead {
-    font-size: 1rem;
-    font-weight: 300;
+    position: relative;
   }
   
-  .aboutFlex {
+  .jumbotron::before {    
+    content: "";
+    background-image: url("../images/jumbotronbckground.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+  }
+
+  .jumbotronFlex {
     display: flex;
     gap: 2em;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
   }
 
-  .aboutFlexText {
-    align-self: center;
-  }
-  
   #profileImage {
-    border: 3px solid var(--dark);
+    border: 3px solid var(--midlight);
     border-radius:var(--borderRadius);
     width: 200px;
     height: 200px;
+    position: relative;
   }
 
+  .jumbotronText {
+    color: var(--dark);
+    text-align: center;
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .jumbotronText p {
+    text-shadow: 0.1px 0.1px #ffffff;
+  }
 
   /* work portfolio  */
 

@@ -10,13 +10,14 @@
   
   body {
     margin: auto;
-    font-family: 'Helvetica', 'Arial', 'sans-serif';
-    line-height: 1.5;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font: var(--dark)
   }
   
   p {
     margin-bottom: 5px;
     font-weight: 300;
+    line-height: 1.5;
   }
 
 
@@ -31,6 +32,7 @@
 
   .jumbotron {
     position: relative;
+    margin-bottom: 50px;
   }
   
   .jumbotron::before {    
@@ -72,16 +74,18 @@
   }
 
   .jumbotronText p {
-    text-shadow: 0.1px 0.1px #ffffff;
+    text-shadow: 0.1px 0px var(--dark);
   }
+
 
   /* work portfolio  */
 
-  .workGrid {
+  .portfolioGrid {
     display: grid;
     gap: 1em;
     justify-content: center;
     flex-wrap: wrap;
+    
     margin-bottom: 50px;
     grid-template-columns: col-4;
     grid-template-rows: 10%;
@@ -110,25 +114,44 @@
     cursor: pointer;
   }
 
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
 
   /*  skills section  */
 
-  .skills {
-    background-color: var(--dark);
-    padding: 40px;
-    color: var(--light);
+  .skillsContainer {
+    background-color: var(--midlight);
+    padding: 40px 40px 10px 40px;
     display: flex;
     justify-content: space-between;
     gap: 1em;
     margin-bottom: 50px;
   }
 
+
   /*  contact section  */
-  .contactme {
+
+  .aboutMe {
     margin-bottom: 50px;
   }
+
+  .contactMe {
+    background-color: var(--midlight);
+  }
+
+  .btn-success {
+    color: #fff;
+    background-color: var(--dark);
+    border-color: (var(--dark));
+  }
   
+
   /*  footer  */
+  
   .footer {
     background-color: var(--dark);
     padding: 40px;

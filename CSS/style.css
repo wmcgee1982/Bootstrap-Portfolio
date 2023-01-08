@@ -1,164 +1,163 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  :root {
-  --dark: #343a40;
-  --light: #f8f9fa;
-  --midlight: #e9e6e9;
-  }
-  
-  body {
-    margin: auto;
-    font-family: "Helvetica Neue", "Arial", sans-serif;
-    font: var(--dark)
-  }
-  
-  p {
-    margin-bottom: 5px;
-    font-weight: 300;
-    line-height: 1.5;
-  }
+:root {
+--dark: #343a40;
+--light: #f8f9fa;
+--midlight: #e9e6e9;
+}
 
+body {
+  margin: auto;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font: var(--dark)
+}
 
-  /* navbar  */
+p {
+  margin-bottom: 5px;
+  font-weight: 300;
+  line-height: 1.5;
+}
 
-  #navbarNav {
-    justify-content: flex-end;
-  }
+a {
+  color: var(--light);
+  text-decoration: none;
+}
 
-
-  /* jumbotron  */
-
-  .jumbotron {
-    position: relative;
-    margin-bottom: 50px;
-  }
-  
-  .jumbotron::before {    
-    content: "";
-    background-image: url("../images/jumbotronbckground.jpg");
-    background-size: cover;
-    background-position: center;
-
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.8;
-  }
-
-  .jumbotronFlex {
-    display: flex;
-    gap: 2em;
-    justify-content: center;
-    align-items: center;
-    opacity: 100%;
-  }
-
-  #profileImage {
-    border: 3px solid var(--midlight);
-    border-radius:var(--borderRadius);
-    width: 200px;
-    height: 200px;
-    position: relative;
-  }
-
-  .jumbotronText {
-    color: var(--dark);
-    text-align: center;
-    position: relative;
-    font-style: italic;
-    font-weight: bold;
-  }
-
-  .jumbotronText p {
-    text-shadow: 0.1px 0px var(--dark);
-  }
+a:hover {
+  border-bottom: 5px solid var(--dark);
+  font-weight: lighter;
+}
 
 
-  /* work portfolio  */
 
-  .portfolioGrid {
-    display: grid;
-    gap: 1em;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    margin-bottom: 50px;
-    grid-template-columns: col-4;
-    grid-template-rows: 10%;
-    grid-template-areas: 
-    "Ti Ti Ti"
-    "fA sA tA";
-  }
+/* navbar  */
 
-  .titleGrid {
-    grid-area: Ti;
-    text-align: center;
-  }
-
-  .firstApp {
-    grid-area: fA;
-    cursor: pointer;
-  }
-
-  .secondApp {
-    grid-area: sA;
-    cursor: pointer;
-  }
-
-  .thirdApp {
-    grid-area: tI;
-    cursor: pointer;
-  }
-
-  .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
+#navbarNav {
+  justify-content: flex-end;
+}
 
 
-  /*  skills section  */
+/* jumbotron  */
 
-  .skillsContainer {
-    background-color: var(--midlight);
-    padding: 40px 40px 10px 40px;
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-    margin-bottom: 50px;
-  }
+.jumbotron {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.jumbotron::before {    
+  content: "";
+  background-image: url("../images/jumbotronbckground.jpg");
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+}
+
+.jumbotronFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+}
+
+#profileImage {
+  border: 3px solid var(--midlight);
+  border-radius:var(--borderRadius);
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.jumbotronText {
+  color: var(--dark);
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.jumbotronText p {
+  text-shadow: 0.1px 0px var(--dark);
+}
 
 
-  /*  contact section  */
+/* work portfolio  */
 
-  .aboutMe {
-    margin-bottom: 50px;
-  }
+.titleGrid {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .contactMe {
-    background-color: var(--midlight);
-  }
+.portfolioGrid {
+  gap: 2em;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
 
-  .btn-success {
-    color: #fff;
-    background-color: var(--dark);
-    border-color: (var(--dark));
-  }
-  
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-  /*  footer  */
-  
-  .footer {
-    background-color: var(--dark);
-    padding: 40px;
-    color: var(--light);
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-  }
 
- 
+/*  skills section  */
+
+.skillsContainer {
+  background-color: var(--midlight);
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: .5em;
+  margin-bottom: 50px;
+}
+
+
+/*  contact section   */
+
+.aboutMe {
+  margin-bottom: 50px;
+}
+
+.contactMe {
+  background-color: var(--midlight);
+}
+
+.btn-success {
+  color: #fff;
+  background-color: var(--dark);
+  border-color: (var(--dark));
+}
+
+
+/*  footer  */
+
+.footerBk {
+  background-color: var(--dark);
+  padding: 40px;
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-weight: bold;
+}
+
+#footerText {
+  display: flex;
+  gap: 1em;
+  font-weight: bold;
+}

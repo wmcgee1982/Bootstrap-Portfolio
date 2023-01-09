@@ -45,157 +45,165 @@
 
 <!-- jumbotron -->
 
-<div class="jumbotron" id="home">
+<section class="jumbotron" id="home">
     <div class="container jumbotronFlex">
       <img id="profileImage" src="images/profile-picture.jpg" alt="Wayne Mcgee web designer profile pic">
-      <div class="jumbotronText">
+      <article class="jumbotronText">
         <h4>Wayne McGee</h4>
         <h2>Simple and accessible websites</h2>
         <p>Web design that feels right to your business</p>
         <p>Make your business shine on the web</p>
         <p>Designed with a human touch</p>
-      </div>
+      </article>
     </div>
-</div>
+  </section>
 
 
 <!-- portfolio -->
 
-<div class="titleGrid"><h4>My Portfolio</h4>
-</div>
-<section class="portfolioGrid" id="work">
-    
-    <div class="card" style="width: 18rem;">
+<main class="container">
+  <title class="titleGrid">
+    <h4>My Portfolio</h4>
+  </title>
+  
+  <section class="portfolioGrid" id="work">
+    <article class="card" style="width: 18rem;">
+      <a href="https://wmcgee1982.github.io/horiseon/">
         <img src="images/horiseon.png" class="card-img-top" alt="Main Application">
         <div class="card-body">
           <p>Horiseon marketing agency website built with semantic HTML elements and follows a logical structure. The site follows accessibility standards and can be optimised in searh engines.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
+      </a>
+    </article>  
+
+    <article class="card" style="width: 18rem;">
+      <a href="https://wmcgee1982.github.io/Portfolio/">
         <img src="images/portfolio.png" class="card-img-top" alt="Main Application">
         <div class="card-body">
           <p class="card-text">A mock portfolio website with contact deails, an about section and a portfolio of applications. The image and icon elements contain title images and alt text attributes.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
+      </a>
+    </article>
+    
+    <article class="card" style="width: 18rem;">
+      <a href="https://wmcgee1982.github.io/Bootstrap-Portfolio/">
         <img src="images/bootstrapportfolio.png" class="card-img-top" alt="Main Application">
         <div class="card-body">
           <p class="card-text">A mock portfolio website with a portfolio of applications. Elements of the site are created using coding within popular framework componants taken from bombootstrap.</p>
         </div>
-      </div>
-    </section>
+      </a>
+    </article>
+  </section>
+</main>
 
 
 <!-- skills container -->
 
-  <div class="skillsContainer">
-    <h4 class="col-2">Front-End Foundations Skills</h4>
-    <ul class="col-3">
-      <li><p>Command-line fundamentals</p></li>
-      <li><p>Git and GitHub</p></li>
-      <li><p>HTML and CSS</p></li>
-      <li><p>User experience design</p></li>
-      <li><p>JavaScript</p></li>
-      <li><p>Third-party APIs (such as jQuery and Bootstrap)</p></li>
-      <li><p>Server-side APIs, AJAX, and JSON</p></li>
-      <li><p>Agile software development methodology</p></li>
+  <section class="skillsContainer" id="skills">
+    <article>
+      <h4>Front-End Foundations Skills</h4>
+      <ul><li><p>Command-line fundamentals</p></li>
+        <li><p>Git and GitHub</p></li>
+        <li><p>HTML and CSS</p></li>
+        <li><p>User experience design</p></li>
+        <li><p>JavaScript</p></li>
+        <li><p>Third-party APIs (such as jQuery and Bootstrap)</p></li>
+        <li><p>Server-side APIs, AJAX, and JSON</p></li>
+        <li><p>Agile software development methodology</p></li>
       </ul>
+    </article>
+    
+    <article>
+      <h4>Front-End Frameworks Skills</h4>
+      <ul><li><p>Node.js</p></li>
+        <li><p>Test-driven development</p></li>
+        <li><p>Object-oriented programming (OOP)</p></li>
+        <li><p>React</p></li>
+        <li><p>Behavior-driven development</p></li>
+        <li><p>Deployment</p></li>
+        <li><p>How to create a professional project portfolio</p></li>
+      </ul>
+    </article>
+  </section>
+
+
+<!-- about me / contact form -->
+
+<section class="aboutMeContainer">
+  <article class="col-lg-5 col-md-12" id="about">
+    <h4>About Me</h4>
+    <p>I am a creative web developer, who aims to provide accessible websites for small and independent businesses in and around local communities.</p><br>
+    <p>I offer development services that bring businesses to life through web applications or websites. My web designs are easy to navigate and easy on the eye. I recognise that it's the small touches that help your website stand out.</p><br>
+    <p>Please use the <b>contact-form</b> to message me with any queries that you may have. &rarr;</p>
+  </article>
   
-  <h4 class="col-2">Front-End Frameworks Skills</h4>
-  <ul class="col-3">
-    <li><p>Node.js</p></li>
-    <li><p>Test-driven development</p></li>
-    <li><p>Object-oriented programming (OOP)</p></li>
-    <li><p>React</p></li>
-    <li><p>Behavior-driven development</p></li>
-    <li><p>Deployment</p></li>
-    <li><p>How to create a professional project portfolio</p></li>
-    </ul>
-  </div>
+  <aside>
+    <article class="row" id="contact">
+      <div class="col-lg-12 mx-auto">
+        <div class="card mt-2 mx-auto p-4 contactMe">
+          <h4>Contact Me</h4>
+          <div class="card-body">
+            <div class ="container">
+              <form id="contact-form" role="form">
+                <div class="controls">                    
 
-
-
-<!-- contact form -->
-
-<div class="container aboutMe" id="contact">
-  <div class="row">
-    
-    <div class="col-6">
-      <h4>About Me</h4>
-      <br>
-      <p>I am a creative web developer, who aims to provide accessible websites for small and independent businesses in and around local communities.</p>
-      <br>
-      <p>I offer development services that bring businesses to life through web applications or websites. My web designs are easy to navigate and easy on the eye. I recognise that it's the small touches that help your website stand out.</p>
-      <br>
-      <p style="display: inline-block;">Please use the <b>contact-form</b> to message me with any queries that you may have. &rarr;</p>
-    </div>
-    
-    <div class="col-6">
-      <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <div class="card mt-2 mx-auto p-4 contactMe">
-            <div class="card-body">
-              <div class ="container">
-                <form id="contact-form" role="form">
-                  <div class="controls">
-                    
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="form_name">Firstname *</label>
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">  
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="form_lastname">Lastname *</label>
-                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                        </div>
-                      </div> 
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="form_email">Email *</label>
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                        </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">  
                       </div>
                     </div>
-                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="form_message">Message *</label>
-                          <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                        </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
                       </div>
-                      <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Send Message">   
+                    </div> 
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                      </div>
                     </div>
                   </div>
+                    
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      </div>
+                    </div>
+                    <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Send Message">   
+                  </div>
+
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </article>
+  </aside>
+
+</section>
 
 
 <!--  Footer  -->
 
-<div class="footerBk" id="footer">
-  <div class="container">
-    <p><b style="font-weight: bold;">Telephone Number: </b><a href="tel:+441234567890">+44 (0) 12345 67890</a></p>
-    <p><b style="font-weight: bold;">Email Address: </b><a href="mailto:info@waynemcgeewebdesign.com">info@waynemcgeewebdesign.com</a></p>
-    <p id="footerText"><a href="https://github.com/wmcgee1982">GitHub</a>
-      <a id="footerText" href="https://twitter.com/testaccount">Twitter</a>
-      <a id="footerText" href="https://spotify.com/testaccount">Spotify</a></p>
-  </div>
-</div>
+<footer class="footerContainer" id="footer">
+  <p><b style="font-weight: bold;">Telephone Number: </b><a href="tel:+441234567890">+44 (0) 12345 67890</a></p>
+  <p><b style="font-weight: bold;">Email Address: </b><a href="mailto:info@waynemcgeewebdesign.com">info@waynemcgeewebdesign.com</a></p>
+  <p id="footerText"><a href="https://github.com/wmcgee1982">GitHub</a>
+    <a href="https://twitter.com/testaccount">Twitter</a>
+    <a href="https://spotify.com/testaccount">Spotify</a>
+  </p>
+</footer>
+
 
 <!--  script  -->
 
